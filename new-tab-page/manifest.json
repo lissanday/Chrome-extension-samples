@@ -1,0 +1,9 @@
+{
+  "name": "New dog page",
+  "description": "Override the new tab page with cutest dog",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "manifest_version": 2
+}

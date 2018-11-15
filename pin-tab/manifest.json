@@ -1,0 +1,22 @@
+{
+  "name": "Pin or duplicate tab",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "pin-tab": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Pin tab"
+    },
+    "duplicate-tab": {
+      "suggested_key": {
+        "default": "Shift+Alt+D"
+      },
+      "description": "Duplicate tab"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Salary day counter",
+  "description": "Show days till next salary",
+  "version": "1.0.0",
+  "background": {
+    "scripts": [ "utils.js", "background.js"]
+  },
+  "browser_action": {
+    "default_title": "Salary day counter"
+  },
+  "manifest_version": 2
+}

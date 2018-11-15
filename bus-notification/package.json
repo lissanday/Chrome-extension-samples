@@ -1,0 +1,46 @@
+{
+  "name": "bus-notification",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "app:launch:dev": "webpack --watch --mode=development"
+  },
+  "keywords": [],
+  "author": "Myroslava Yurchyshyn",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "muicss": "^0.9.41",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": "67"
+          },
+          "useBuiltIns": "usage"
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-class-properties"
+    ]
+  }
+}
